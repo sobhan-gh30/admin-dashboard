@@ -1,5 +1,6 @@
 import {useRoutes} from "react-router-dom";
 import appRoutes from "./routes";
+import TopBar from "./components/top bar";
 function App() {
   let router = useRoutes(appRoutes)
   let isPage = router.props.match.route.path
@@ -13,6 +14,7 @@ function App() {
   } else {
     return (
         <>
+          <TopBar />
           {router}
         </>
     );
