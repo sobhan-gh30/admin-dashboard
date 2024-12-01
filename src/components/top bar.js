@@ -15,7 +15,7 @@ export default function TopBar() {
                 <FaHeart/>
                 Sobhan
             </h2>
-            <div className="hidden sm:flex justify-center items-center gap-5 text-gray-500">
+            <div className="hidden lg:flex justify-center items-center gap-5 text-gray-500">
                 <span>
                     <CiBellOn className="scale-[2] inline-block  hover:text-gray-800 transition "/>
                     <span
@@ -43,7 +43,7 @@ export default function TopBar() {
                 className="h-7 w-7
                 text-5xl text-white font-bold
                  hover:rotate-45 transition
-                  flex justify-center items-center sm:hidden
+                  flex justify-center items-center lg:hidden
                    bg-gray-900 bg-opacity-50 rounded-full">
                 <HiOutlinePlus />
             </button>
