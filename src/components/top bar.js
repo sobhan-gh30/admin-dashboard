@@ -10,7 +10,7 @@ export default function TopBar() {
     let [hasProfile, setHasProfile] = useState("")
 
     return (
-        <div className="w-full h-16 py-2 px-5 flex justify-between items-center fixed z-10 bg-white">
+        <div className="w-full h-16 py-2 px-5 flex justify-between items-center fixed top-0 left-0 right-0 z-10 bg-white">
             <h2 className="h-14 flex items-center gap-2 font-bold text-3xl text-slate-900">
                 <FaHeart/>
                 Sobhan

@@ -15,10 +15,13 @@ function App() {
     return (
         <>
             <TopBar />
-            <SideBar/>
-            <div className="absolute top-[4rem] left-0 lg:left-60 lg:w-[calc(100%-15rem)] w-full">
-                {router}
+            <div className="flex mt-16">
+                <SideBar/>
+                <div className="w-5/6">
+                    {router}
+                </div>
             </div>
+
 
         </>
     );
