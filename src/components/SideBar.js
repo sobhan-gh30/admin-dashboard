@@ -9,6 +9,7 @@ import {
     Timeline,
     TrendingUp, WorkOutline
 } from "@mui/icons-material";
+import {Link} from "react-router-dom"
 
 export default function SideBar(){
     return(
@@ -16,44 +17,69 @@ export default function SideBar(){
             <div className="w-full">
                 <p className="font-semibold text-gray-400">Dashboard</p>
                 <ul className="px-1 pb-3">
-                    <li className="flex gap-2 w-full py-[5px] px-5 hover:bg-slate-200  rounded-lg text-gray-600 hover:text-zinc-800">
-                        <LineStyleIcon/>
-                        Home
-                    </li>
-                    <li className="flex gap-2 w-full py-[5px] px-5 bg-red-2 hover:bg-slate-200  rounded-lg text-gray-600 hover:text-zinc-800">
-                        <Timeline/>
-                        Analytics
-                    </li>
-                    <li className="flex gap-2 w-full py-[5px] px-5  hover:bg-slate-200  rounded-lg text-gray-600 hover:text-zinc-800">
-                        <TrendingUp/>
-                        Sales
-                    </li>
+
+                    <Link to="/">
+                        <li className="flex gap-2 w-full py-[5px] px-5 hover:bg-slate-200  rounded-lg text-gray-600 hover:text-zinc-800">
+                            <LineStyleIcon/>
+                            Home
+                        </li>
+                    </Link>
+
+                    <Link to="/">
+                        <li className="flex gap-2 w-full py-[5px] px-5 bg-red-2 hover:bg-slate-200  rounded-lg text-gray-600 hover:text-zinc-800">
+                            <Timeline/>
+                            Analytics
+                        </li>
+                    </Link>
+
+                    <Link to="/">
+                        <li className="flex gap-2 w-full py-[5px] px-5  hover:bg-slate-200  rounded-lg text-gray-600 hover:text-zinc-800">
+                            <TrendingUp/>
+                            Sales
+                        </li>
+
+                    </Link>
                 </ul>
             </div>
 
             <div className="w-full">
                 <p className="font-semibold text-gray-400">Quick Menu</p>
                 <ul className="px-1 pb-5">
-                    <li className="flex gap-2 w-full py-[5px] px-5 hover:bg-slate-200  rounded-lg text-gray-600 hover:text-zinc-800">
-                        <PermIdentity />
-                        Users
-                    </li>
-                    <li className="flex gap-2 w-full py-[5px] px-5 bg-red-2 hover:bg-slate-200  rounded-lg text-gray-600 hover:text-zinc-800">
-                        <PermIdentity />
-                        New User
-                    </li>
-                    <li className="flex gap-2 w-full py-[5px] px-5 hover:bg-slate-200  rounded-lg text-gray-600 hover:text-zinc-800">
-                        <Storefront />
-                        Product
-                    </li>
-                    <li className="flex gap-2 w-full py-[5px] px-5 hover:bg-slate-200  rounded-lg text-gray-600 hover:text-zinc-800">
-                        <AttachMoney/>
-                        Transaction
-                    </li>
-                    <li className="flex gap-2 w-full py-[5px] px-5 hover:bg-slate-200  rounded-lg text-gray-600 hover:text-zinc-800">
-                        <BarChart/>
-                        Reports
-                    </li>
+
+                    <Link to="/allUsers">
+                        <li className="flex gap-2 w-full py-[5px] px-5 hover:bg-slate-200  rounded-lg text-gray-600 hover:text-zinc-800">
+                            <PermIdentity />
+                            Users
+                        </li>
+                    </Link>
+
+                    <Link to="/newUser">
+                        <li className="flex gap-2 w-full py-[5px] px-5 bg-red-2 hover:bg-slate-200  rounded-lg text-gray-600 hover:text-zinc-800">
+                            <PermIdentity />
+                            New User
+                        </li>
+                    </Link>
+
+                    <Link to="/">
+                        <li className="flex gap-2 w-full py-[5px] px-5 hover:bg-slate-200  rounded-lg text-gray-600 hover:text-zinc-800">
+                            <Storefront />
+                            Product
+                        </li>
+                    </Link>
+
+                    <Link to="/">
+                        <li className="flex gap-2 w-full py-[5px] px-5 hover:bg-slate-200  rounded-lg text-gray-600 hover:text-zinc-800">
+                            <AttachMoney/>
+                            Transaction
+                        </li>
+                    </Link>
+
+                    <Link to="/">
+                        <li className="flex gap-2 w-full py-[5px] px-5 hover:bg-slate-200  rounded-lg text-gray-600 hover:text-zinc-800">
+                            <BarChart/>
+                            Reports
+                        </li>
+                    </Link>
                 </ul>
             </div>
 
