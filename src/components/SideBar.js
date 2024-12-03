@@ -12,7 +12,7 @@ import {
 
 export default function SideBar(){
     return(
-        <div className="h-[calc(100vh-4rem)] w-80 bg-slate-100 bg-opacity-40 fixed top-[4rem] -left-80 lg:left-0 p-3 py-5">
+        <div className="h-[calc(100vh-4rem)] w-60 bg-slate-100 bg-opacity-40 fixed top-[4rem] -left-60 lg:left-0 p-3 py-5">
             <div className="w-full">
                 <p className="font-semibold text-gray-400">Dashboard</p>
                 <ul className="px-1 pb-3">
@@ -62,15 +62,15 @@ export default function SideBar(){
                 <ul className="px-1 pb-5">
                     <li className="flex gap-2 w-full py-[5px] px-5 hover:bg-slate-200  rounded-lg text-gray-600 hover:text-zinc-800">
                         <LineStyleIcon/>
-                        Home
+                        Mail
                     </li>
                     <li className="flex gap-2 w-full py-[5px] px-5 bg-red-2 hover:bg-slate-200  rounded-lg text-gray-600 hover:text-zinc-800">
                         <MailOutline/>
-                        Analytics
+                        Feedback
                     </li>
                     <li className="flex gap-2 w-full py-[5px] px-5 hover:bg-slate-200  rounded-lg text-gray-600 hover:text-zinc-800">
                         <DynamicFeed/>
-                        Sales
+                        Message
                     </li>
                 </ul>
             </div>
@@ -80,7 +80,7 @@ export default function SideBar(){
                 <ul className="px-1 pb-5">
                     <li className="flex gap-2 w-full py-[5px] px-5 hover:bg-slate-200  rounded-lg text-gray-600 hover:text-zinc-800">
                         <ChatBubble/>
-                        Home
+                        Manage
                     </li>
                     <li className="flex gap-2 w-full py-[5px] px-5 bg-red-2 hover:bg-slate-200  rounded-lg text-gray-600 hover:text-zinc-800">
                         <WorkOutline/>
@@ -88,7 +88,7 @@ export default function SideBar(){
                     </li>
                     <li className="flex gap-2 w-full py-[5px] px-5 hover:bg-slate-200  rounded-lg text-gray-600 hover:text-zinc-800">
                         <Report/>
-                        Sales
+                        Reports
                     </li>
                 </ul>
             </div>

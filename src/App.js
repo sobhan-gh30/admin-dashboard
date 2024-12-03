@@ -16,7 +16,7 @@ function App() {
         <>
             <TopBar />
             <SideBar/>
-            <div className="absolute top-[4rem] left-0 lg:left-80 lg:w-[calc(100%-20rem)] w-full bg-rose-400">
+            <div className="absolute top-[4rem] left-0 lg:left-60 lg:w-[calc(100%-15rem)] w-full bg-rose-400">
                 {router}
             </div>
 
