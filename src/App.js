@@ -17,7 +17,7 @@ function App() {
             <TopBar />
             <div className="flex mt-16">
                 <SideBar/>
-                <div className="w-5/6">
+                <div className="lg:w-5/6 w-full">
                     {router}
                 </div>
             </div>

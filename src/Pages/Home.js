@@ -6,7 +6,7 @@ import HomeChart from "../components/Feature/HomeChart";
 export default function Home(){
     return(
         <div>
-            <div className="container flex justify-between gap-5">
+            <div className="container flex items-center justify-between gap-5 flex-col sm:flex-row">
                 {FeatureData.map((Data)=>{
                     return(<Features {...Data} />)
                 })}
